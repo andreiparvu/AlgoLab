@@ -34,13 +34,14 @@ int main() {
     int mx = 0;
     for (int i = 1; i <= m; i++) {
       sort(in[i].begin(), in[i].end(), greater<int>());
-      bool here = false;
+      bool here = false, didit = false;
       for (int j = 0; j < in[i].size(); j++) {
         //printf("--%d\n", in[i][j]);
         if (in[i][j] <= mx) {
           sol--;
-          if (in[i][j] == mx && here) {
+          if (in[i][j] == mx && here && !didit) {
             sol--;
+            didit = true;
           }
         } else {
           mx = max(mx, in[i][j]);
