@@ -31,7 +31,7 @@ int main() {
     int nrb = 1;
     for (int i = 1; i < v.size(); i++) {
       if (end <= v[i].first) {
-        cout << v[i].first << "\n";
+      //  cout << v[i].first << "\n";
         nrb++;
         end = max(end, v[i].first - v[i].second) + v[i].second;
         ind = i;
@@ -39,7 +39,7 @@ int main() {
         int start = max(v[i].first - v[i].second, end - v[ind].second);
 
         if (start + v[i].second < end) {
-          cout << v[ind].first << "-" << v[i].first << "\n";
+        //  cout << v[ind].first << "-" << v[i].first << "\n";
           end = start + v[i].second;
           ind = i;
         }
