@@ -3,8 +3,10 @@
 #include <algorithm>
 #include <vector>
 using namespace std;
+#include <cstring>
 
 vector<int> in[500005];
+int out[500005];
 
 int main() {
   int tests;
@@ -15,7 +17,7 @@ int main() {
     int n, m;
     cin >> n >> m;
 
-    vector<int> out(m + 5, 0);
+    memset(out, 0, sizeof(out));
 
     int sol = n;
     for (int i = 0; i < n; i++) {
