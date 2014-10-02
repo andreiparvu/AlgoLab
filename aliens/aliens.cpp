@@ -3,8 +3,10 @@
 #include <algorithm>
 #include <vector>
 using namespace std;
+#include <cstring>
 
 vector<int> in[500005];
+int out[500005];
 
 int main() {
   int tests;
@@ -15,7 +17,11 @@ int main() {
     int n, m;
     cin >> n >> m;
 
-    vector<int> out(m + 5, 0);
+    memset(out, 0, sizeof(out));
+
+    for (int i = 1; i <= m; i++) {
+      in[i].clear();
+    }
 
     int sol = n;
     for (int i = 0; i < n; i++) {
@@ -36,7 +42,6 @@ int main() {
       sort(in[i].begin(), in[i].end(), greater<int>());
       bool here = false, didit = false;
       for (int j = 0; j < in[i].size(); j++) {
-        //printf("--%d\n", in[i][j]);
         if (in[i][j] <= mx) {
           sol--;
           if (in[i][j] == mx && here && !didit) {
@@ -49,10 +54,7 @@ int main() {
         }
       }
       inq += in[i].size();
-      vector<int> b;
-      in[i].swap(b);
 
-      //printf("%d\n", inq);
       if (inq == 0) {
         sol = 0;
         break;
