@@ -18,10 +18,13 @@ int main() {
     cin >> n >> m;
 
     memset(out, 0, sizeof(out));
+<<<<<<< HEAD
 
     for (int i = 1; i <= m; i++) {
       in[i].clear();
     }
+=======
+>>>>>>> 05c4cbb1b3c99d0961defcaf1581240cdc37d2e8
 
     int sol = n;
     for (int i = 0; i < n; i++) {
