@@ -55,10 +55,6 @@ int main() {
       }
     }
 
-    for (set<int> :: iterator it = s.begin(); it != s.end(); it++) {
-      //cout << *it << "\n";
-    }
-
     cout << nrb << "\n";
   }
 

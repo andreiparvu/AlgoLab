@@ -38,10 +38,12 @@ int main() {
 
       if (j == k - 1) {
         if (b == true) {
+          // don't have to change
           d[i][0] = min(d[i + 1][0], d[i + 1][1] + 1);
           d[i][1] = min(d[i + 1][1] + 1, d[i + 1][0] + 2);
         } else {
-          d[i][0] = min(d[i + 1][0] + 1, d[i + 1][1] + 1);
+          // have to change
+          d[i][0] = min(d[i + 1][0] + 1, d[i + 1][1] + 2);
           d[i][1] = min(d[i + 1][1], d[i + 1][0] + 1);
         }
       } else {
