@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/nas/parvua/Documents/AlgoLab/almost_antenna/almost_antenna.cpp
+CGAL/Exact_predicates_exact_constructions_kernel_with_sqrt.h
+-
+CGAL/Min_circle_2.h
+-
+CGAL/Min_circle_2_traits_2.h
+-
+iostream
+-
+

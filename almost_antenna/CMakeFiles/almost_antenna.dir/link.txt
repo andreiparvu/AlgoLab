@@ -1,0 +1,1 @@
+/usr/bin/clang++   -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -frounding-math -O3 -DNDEBUG  -fPIC CMakeFiles/almost_antenna.dir/almost_antenna.cpp.o  -o almost_antenna -rdynamic -lCGAL_Core -lCGAL -lmpfr -lgmp -lboost_thread-mt -lCGAL_Core -lCGAL -lmpfr -lgmp -lboost_thread-mt 

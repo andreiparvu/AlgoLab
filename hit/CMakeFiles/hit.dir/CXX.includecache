@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/nas/parvua/Documents/AlgoLab/hit/hit.cpp
+CGAL/Exact_predicates_exact_constructions_kernel_with_sqrt.h
+-
+iostream
+-
+stdexcept
+-
+
