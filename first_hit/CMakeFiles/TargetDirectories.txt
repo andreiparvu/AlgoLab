@@ -1,0 +1,1 @@
+/home/andrei/Documents/AlgoLab/first_hit/CMakeFiles/first_hit.dir
