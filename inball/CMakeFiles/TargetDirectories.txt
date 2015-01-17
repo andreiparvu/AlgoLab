@@ -1,0 +1,1 @@
+/home/andrei/Documents/AlgoLab/inball/CMakeFiles/inball.dir

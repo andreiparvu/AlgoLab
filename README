@@ -1,0 +1,45 @@
+Interesting problems
+--------------------
+
+
+satellites - minimum vertex cover
+h1n1 - construct graph from delaunay triangulation and determine minimum distance to an infinite face
+algocoon - determine min-cut in graph
+tetris - nice idea of max-flow
+placing knights - constructing bipartite graph from chess board + max flow
+sweepers - eulerian tour + max flow
+weer12 - check bipartite graph constructed from delaunay triangulation
+week13 - min/cut in graph used for optimal route planning
+
+
+* connecting cities
+  dynamic programming in order to determine the maximum matching
+
+* consecutive constructions
+  create a bipartite graph, having out-nodes on the left and in-nodes on the right
+  run a matching on this graph
+
+
+* marble floor
+  construct bipartite graph, based on the coloring of tiles (like in a chess board)
+  construct edges in bipartite graph
+  run max-flow / maximum matching
+
+* domino snake
+  run a bfs on the matrix, with respect to the constraints
+  no tile will end where another tile begins (because of the same coloring seen in 'marble floor')
+
+* new tiles
+  dynamic programming with exponential states D[i][bitmask] - maximum number of tiles
+  considering the first i rows and only the bitmask positions on the i-th row.
+
+* downhill course
+  construct graph in N^2
+  do maximum independent set (ad-hoc because of maximum degree of 2)
+
+* use them all
+  construct triangulation and get closest neighbours
+
+* software update
+  hidden Linear Programming - note that the response can be real - it just
+  needs rounding

@@ -5,6 +5,34 @@
 
 #include <boost/graph/max_cardinality_matching.hpp>
 
+
+/*
+   1. maximum matching - select maximum number of edges such that no
+   vertex has no adjacent edges
+   2. minimum vertex cover - select a minimum number of nodes such that
+   each edge has at leat one vertex at one of the ends
+   3. maximum independent set - select a maximum number of vertices
+   such that no two vertexes are connected through an edge
+
+   Koning's theorem states that in a bipartite graph the size of the
+   maximum matching equals the size of the minimum vertex cover.
+   Secondly, the maximum independent set is the complement of a minimum
+   vertex cover.
+
+   To construct a minimum vertex cover:
+
+  Take a maximum matching M and split the vertices in two sets, left (L)
+  and right (R). Find unmatched vertices in L and mark them as visited.
+
+  Start a dfs from visited vertices and:
+    * traverse an edge from left to right if it's not a part of the 
+    matching
+    * traverse an edge from right to left if it's a part of the matching
+  Label each vertex as visited.
+
+  All unvisited in L and all visied in R form the minimum vertex cover
+*/
+
 using namespace std;
 using namespace boost;
 
