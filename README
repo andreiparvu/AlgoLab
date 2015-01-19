@@ -8,7 +8,8 @@ algocoon - determine min-cut in graph
 tetris - nice idea of max-flow
 placing knights - constructing bipartite graph from chess board + max flow
 sweepers - eulerian tour + max flow
-weer12 - check bipartite graph constructed from delaunay triangulation
+radiation2 - interesting functions for delaunay + sweeping
+week12 - check bipartite graph constructed from delaunay triangulation
 week13 - min/cut in graph used for optimal route planning
 
 

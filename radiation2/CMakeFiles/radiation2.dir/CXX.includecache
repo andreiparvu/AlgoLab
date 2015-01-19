@@ -13,11 +13,19 @@ CGAL/Delaunay_triangulation_2.h
 -
 vector
 -
+iterator
+-
+algorithm
+-
 iostream
 -
 CGAL/Point_2.h
 -
+CGAL/Segment_2.h
+-
 CGAL/Unique_hash_map.h
+-
+cstdio
 -
 
 /usr/include/x86_64-linux-gnu/fpu_control.h
